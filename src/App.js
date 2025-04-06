@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Hero from './Componentes/hero';
+import Navbar from './Componentes/navBar';
+import Productos from './Componentes/productos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-900 min-h-screen text-white">
+      <Navbar />
+      <Hero />
+      <Productos />
+      <Hero />
+
+      <main className="p-8">
+        <h1 className="text-3xl font-bold">Bienvenido a PlussFit</h1>
+      </main>
     </div>
   );
 }
