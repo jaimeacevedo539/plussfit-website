@@ -1,4 +1,4 @@
-
+/*El componente app sera el principal en donde vamos a rendereizar el resto de componentes */
 import './App.css';
 import Hero from './Componentes/hero';
 import Navbar from './Componentes/navBar';

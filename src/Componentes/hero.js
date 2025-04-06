@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-cover bg-center bg-no-repeat h-screen flex flex-col items-center justify-center text-white px-6"
-      style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+    <section  className="relative bg-contain bg-center bg-no-repeat h-[400px] flex flex-col items-center justify-center text-white px-6"
+      style={{ backgroundImage: "url('/images/sentado hombre.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
       
       {/* Capa Oscura para Mejor Visibilidad */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
