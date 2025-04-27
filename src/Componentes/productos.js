@@ -72,7 +72,7 @@ const Productos = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
 
   return (
-    <div className="py-12 bg-white">
+    <><section id="products" className="p-8 bg-gray-100"></section><div className="py-12 bg-white">
       <h2 className="text-center text-2xl font-bold text-green-700 mb-8">
         NUESTROS PRODUCTOS
       </h2>
@@ -86,8 +86,7 @@ const Productos = () => {
             <img
               src={producto.imagen}
               alt={producto.nombre}
-              className="w-full h-40 object-cover mb-4 rounded"
-            />
+              className="w-full h-40 object-cover mb-4 rounded" />
             <h3 className="text-lg font-semibold">{producto.nombre}</h3>
             <p className="text-sm text-gray-500">Sabor: {producto.sabor}</p>
             <p className="text-green-600 font-bold mt-2">{producto.precio}</p>
@@ -108,15 +107,14 @@ const Productos = () => {
             <img
               src={productoSeleccionado.imagen}
               alt={productoSeleccionado.nombre}
-              className="w-full h-40 object-cover mb-4 rounded"
-            />
+              className="w-full h-40 object-cover mb-4 rounded" />
             <h3 className="text-xl font-bold">{productoSeleccionado.nombre}</h3>
             <p className="text-gray-600 mt-2">{productoSeleccionado.descripcion}</p>
             <p className="text-green-600 font-bold mt-4">{productoSeleccionado.precio}</p>
           </div>
         </Dialog>
       )}
-    </div>
+    </div></>
   );
 };
 
