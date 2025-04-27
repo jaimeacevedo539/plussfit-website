@@ -1,3 +1,4 @@
+// este componente nos muestra la disponibilidad de los productos que estan en stock
 import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 
@@ -94,7 +95,7 @@ const Productos = () => {
         ))}
       </div>
 
-      {/* Modal */}
+      {/* este Modal abre la descripcion de cada producto con su respectivo precio */}
       {productoSeleccionado && (
         <Dialog open={true} onClose={() => setProductoSeleccionado(null)} className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg max-w-sm w-full shadow-lg">

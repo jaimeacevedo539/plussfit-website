@@ -1,3 +1,4 @@
+//este componente nos muestra ciertas opiniones de clientes que ya probaron la pagina y los productos
 import React from "react";
 
 const Testimonios = () => {
@@ -23,6 +24,7 @@ const Testimonios = () => {
   ];
 
   return (
+    
     <section id="testimonials" className="p-8 bg-gray-100">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
         Testimonios

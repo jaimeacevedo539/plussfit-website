@@ -1,4 +1,4 @@
-
+//este componente es el inicial en donde al darle click a productos testimonio contacto o acceder nos direcciona a su respectivo componente
 import React, { useState } from "react";
 
 const Navbar = () => {

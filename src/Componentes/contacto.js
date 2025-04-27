@@ -1,3 +1,4 @@
+// el componente contacto es un form que permite al usuario enviar sugerencias peticiones o reclamos 
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -11,7 +12,7 @@ const ContactForm = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value, // Actualiza el valor específico del input
+      [name]: value, 
     }));
   };
 
@@ -19,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
     console.log("Formulario enviado:", formData);
     alert("¡Gracias por contactarnos!");
-    setFormData({ nombre: "", email: "", mensaje: "" }); // Limpiar el formulario
+    setFormData({ nombre: "", email: "", mensaje: "" }); 
   };
 
   return (

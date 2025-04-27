@@ -1,3 +1,4 @@
+//el componente hero nos muestra el banner incial y final con un boton de prueba nuestros productos el cual direcciona los clientes al listado de productos disponibles
 import React from "react";
 
 const Hero = () => {
